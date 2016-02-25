@@ -92,11 +92,14 @@ function getNumberOfDeluxePotions() {
 function renderDeluxePotion() {
     var potion = generateDeluxPotion();
     $("#generated_potion").html(potion);
+    ga('send', 'event', 'PotionMachine', 'click', 'DeluxePotion()');
 }
 
 function renderBasicPotion() {
     var potion = generateBasicPotion();
     $("#generated_potion").html(potion);
+    ga('send', 'event', 'PotionMachine', 'click', 'BasicPotion()');
+
 }
 
 function setModeBasicPotion() {
@@ -125,6 +128,7 @@ function setModeDeluxePotion() {
     $( "#switch_mode_button" ).click(function() {
         setModeBasicPotion();
     });
+
 
 }
 
