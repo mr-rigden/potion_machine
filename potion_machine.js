@@ -5,7 +5,7 @@ rpg_data = {};
 function loadData() {
     //https://rpg.rigden.us/seeds_of_infinity/resources/json/all.json
     //all.json
-    $.getJSON("https://rpg.rigden.us/seeds_of_infinity/resources/json/all.json", function(json_response) {
+    $.getJSON("https://jasonrigden.com/share/seeds_of_infinity/resources/json/all.json", function(json_response) {
         rpg_data = json_response.data;
         setModeDeluxePotion()
     });
